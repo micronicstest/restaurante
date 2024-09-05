@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebida Saludable de Fresa y Pera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="nav-left">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="tienda.html">Tienda</a>
+            </nav>
+            <div class="logo-container">
+                <img src="imagenes/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="nav-right">
+                <a href="iniciar sesion.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="carrito.html" id="cart-icon" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-slide"><img src="imagenes/jugo.png" alt="Imagen 1"></div>
+            <div class="hero-slide"><img src="imagenes/mermelada.png" alt="Imagen 2"></div>
+            <div class="hero-slide"><img src="imagenes/gomitas.png" alt="Imagen 3"></div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="best-sellers">
+        <h2>Lo Más Vendidos</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="imagenes/250mli.png" alt="Producto 1">
+                <p>Sabor a Fresa de 250.ml   S/8.90</p>
+                <button class="add-to-cart" data-name="Producto 1" data-price="10.00" data-image="producto1.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/250ml.png" alt="Producto 2">
+                <p>Sabor a Pera de 250.ml   S/8.90</p>
+                <button class="add-to-cart" data-name="Producto 2" data-price="12.00" data-image="producto2.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/500.ml.png" alt="Producto 3">
+                <p>Sabor a Pera de 500.ml   S/15.90</p>
+                <button class="add-to-cart" data-name="Producto 3" data-price="8.00" data-image="producto3.jpg">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/500ml.png" alt="Producto 4">
+                <p>Sabor a Pera de 500.ml   S/15.90</p>
+                <button class="add-to-cart" data-name="Producto 4" data-price="15.00" data-image="producto4.jpg">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="about-container">
+            <img src="imagenes/Eslogan.png" alt="Sobre Nosotros" class="about-image">
+            <div class="about-description">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una empresa dedicada al bienestar de las personas que desean mantener una vida sana sin ninguna restricción.</p>
+                <P><STrong>FRUTIVITAL</STrong></P>
+                <a href="nosotros.html"class="button">Conoce Más</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-products">
+        <div class="featured-grid">
+            <div class="featured-item top-left">
+                <img src="imagenes/250ml.png" alt="Producto 1">
+            </div>
+            <div class="featured-item top-right">
+                <img src="imagenes/250mli.png" alt="Producto 2">
+            </div>
+            <div class="featured-item center">
+                <img src="imagenes/1lt.png" alt="Producto 3">
+            </div>
+            <div class="featured-item bottom-left">
+                <img src="imagenes/500.ml.png" alt="Producto 4">
+            </div>
+            <div class="featured-item bottom-right">
+                <img src="imagenes/500ml.png" alt="Producto 5">
+            </div>
+        </div>
+    </section>
+
+    <section id="categories">
+        <h2>Categorías</h2>
+        <div class="category-grid">
+            <!-- Categoría de Jugos -->
+            <div class="category-item">
+                <h3>Jugos</h3>
+                <div class="category-images">
+                    <div class="product">
+                        <img src="imagenes/1,5lt.png" alt="Producto 1">
+                        <p>Sabor a Fresa de 1.5 lt</p>
+                        <p>S/40.90</p>
+                        <button class="add-to-cart" data-name="Producto 1" data-price="10.00" data-image="producto1.jpg">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="imagenes/1.5lt.png" alt="Producto 2">
+                        <p>Sabor a Pera de 1.5 lt</p>
+                        <p>S/40.90</p>
+                        <button class="add-to-cart" data-name="Producto 2" data-price="12.00" data-image="producto2.jpg">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="imagenes/1lt.png" alt="Producto 3">
+                        <p>Sabor a Fresa de 1.lt</p>
+                        <p>S/27.90</p>
+                        <button class="add-to-cart" data-name="Producto 3" data-price="8.00" data-image="producto3.jpg">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="imagenes/1lto.png" alt="Producto 4">
+                        <p>Sabor a Pera de 1.lt</p>
+                        <p>S/27.90</p>
+                        <button class="add-to-cart" data-name="Producto 4" data-price="15.00" data-image="producto4.jpg">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Categoría de Gomitas -->
+            <div class="category-item">
+                <h3>Gomitas</h3>
+                <div class="category-images">
+                    <div class="product">
+                        <img src="imagenes/gomita.png" alt="Producto 1">
+                        <p>Gomitas Surtido</p>
+                        <p>S/3.00</p>
+                        <button class="add-to-cart" data-name="Producto 1" data-price="10.00" data-image="producto1.jpg">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="imagenes/gomita1.png" alt="Producto 2">
+                        <p>Gomitas Fresa</p>
+                        <p>S/3.50</p>
+                        <button class="add-to-cart" data-name="Producto 2" data-price="12.00" data-image="producto2.jpg">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="imagenes/gomita2.png" alt="Producto 3">
+                        <p>Gomitas de Pera y Fresa</p>
+                        <p>S/4.00</p>
+                        <button class="add-to-cart" data-name="Producto 3" data-price="8.00" data-image="producto3.jpg">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Categoría de Mermeladas -->
+            <div class="category-item">
+                <h3>Mermeladas</h3>
+                <div class="category-images">
+                    <div class="product">
+                        <img src="imagenes/mermeladaf.png" alt="Producto 1">
+                        <p>Mermelada de Fresa de 250g</p>
+                        <p>S/20.80</p>
+                        <button class="add-to-cart" data-name="Producto 1" data-price="10.00" data-image="producto1.jpg">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="imagenes/mermeladap2.png" alt="Producto 2">
+                        <p>Mermelada de Pera de 800g</p>
+                        <p>S/30.80</p>
+                        <button class="add-to-cart" data-name="Producto 2" data-price="12.00" data-image="producto2.jpg">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="imagenes/mermelada3.png" alt="Producto 3">
+                        <p>Mermelada de Fresa de 1k</p>
+                        <p>S/32.80</p>
+                        <button class="add-to-cart" data-name="Producto 3" data-price="8.00" data-image="producto3.jpg">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="imagenes/mermelada1.png" alt="Producto 4">
+                        <p>Mermelada de Fresa de 500g</p>
+                        <p>S/25.80</p>
+                        <button class="add-to-cart" data-name="Producto 4" data-price="15.00" data-image="producto4.jpg">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo-contact">
+                <img src="imagenes/logo.png" alt="Logo" class="footer-logo">
+                <div class="contact-info">
+                    <p>Teléfono: +51 997 753 496</p>
+                    <p>Email: <a href="mailto:info@bebidafresa.com">info@bebidafresa.com</a></p>
+                    <p>Síguenos:</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564881196009&mibextid=qi2Omg&rdid=guccCnYIOMd3tkDh&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FWGmqkBfZDGgiv8Hw%2F%3Fmibextid%3Dqi2Omg" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-info">
+                <p>Aceptamos todas las tarjetas:</p>
+                <a href="https://www.visa.com" target="_blank" class="payment-icon" aria-label="Visa">
+                    <i class="fab fa-cc-visa"></i>
+                </a>
+                <a href="https://www.mastercard.com" target="_blank" class="payment-icon" aria-label="MasterCard">
+                    <i class="fab fa-cc-mastercard"></i>
+                </a>
+                <a href="https://www.americanexpress.com" target="_blank" class="payment-icon" aria-label="American Express">
+                    <i class="fab fa-cc-amex"></i>
+                </a>
+            </div>
+            <div class="complaint-book">
+                <img src="imagenes/libro de reclamaciones.png" alt="Libro de Reclamaciones">
+            </div>
+        </div>
+    </footer>
+
+    <div id="cart-container">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <button id="checkout-button">Comprar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

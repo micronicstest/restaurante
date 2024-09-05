@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar - Tu Compra</title>
+    <link rel="stylesheet" href="css/tarjeta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="nav-left">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="tienda.html">Tienda</a>
+            </nav>
+            <div class="logo-container">
+                <img src="imagenes/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="nav-right">
+                <a href="iniciar sesion.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="carrito.html" id="cart-icon" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="payment">
+            <div class="payment-container">
+                <div class="payment-details">
+                    <h1>Detalles de Pago</h1>
+                    <form id="payment-form">
+                        <div class="form-group">
+                            <label for="first-name">Nombre</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="Ingrese su Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Apellido</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Ingrese su Apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id-type">Tipo de Documento</label>
+                            <select id="id-type" name="id-type" required>
+                                <option value="dni">DNI</option>
+                                <option value="ruc">RUC</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="id-number">Número de Documento</label>
+                            <input type="text" id="id-number" name="id-number" placeholder="12345678" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="text" id="phone" name="phone" placeholder="987654321" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="correo@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="shipping-address">Dirección de Envío</label>
+                            <input type="text" id="shipping-address" name="shipping-address" placeholder="Calle, Ciudad, País" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="district">Distrito</label>
+                            <input type="text" id="district" name="district" value="Lima" readonly required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reference">Referencia</label>
+                            <input type="text" id="reference" name="reference" placeholder="Referencia adicional">
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Notas del Pedido (Opcional)</label>
+                            <textarea id="notes" name="notes" placeholder="Ingrese cualquier información adicional aquí..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="payment-methods">
+                    <h2>Seleccionar Método de Pago</h2>
+                    <p id="payment-info-text">Seleccione un método de pago para ver la información adicional.</p>
+                    <form id="payment-method-form">
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" name="payment-method" value="transferencia" id="transferencia">
+                                Transferencia
+                                <img src="imagenes/bcp.png" alt="BCP" class="payment-icon">
+                            </label>
+                            <div id="transferencia-details" class="method-details">
+                                <p>Realizar tu pago directamente en nuestras cuentas bancarias:</p>
+                                <p> BCP N°: 194-9856101-0-78</p>
+                                <p>CCI: 002194009856101078</p>
+                                <p>Titular:<strong>Karla Paola Sandoval Contreras</strong></p>
+                                <p>Una vez realizado el abono por favor enviar el voucher a nuestro whatsapp</p>
+                                <p><strong>9977753496</strong></p>
+                                <p>¡Muchas Gracias</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" name="payment-method" value="yape" id="yape">
+                                Yape
+                                <img src="imagenes/yape.png" alt="Yape" class="payment-icon">
+                            </label>
+                            <div id="yape-details" class="method-details">
+                                <p>Realizar tu pago 100% seguro a través de tu aplicativo YAPE registrando el número <strong>997753496</strong></p>
+                                <p>No olvides confirmar el pago enviando la constancia a nuestro Whatsapp</p>
+                                <p><strong>9977753496</strong></p>
+                                <p>Titula:<strong> Karla Paola Sandoval Contreras</strong></p>
+                                <p>¡Muchas Gracias por su compra</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" name="payment-method" value="plin" id="plin">
+                                Plin
+                                <img src="imagenes/plin.png" alt="Plin" class="payment-icon">
+                            </label>
+                            <div id="plin-details" class="method-details">
+                                <p>Realizar tu pago 100% seguro a través de tu aplicativo PLIN registrando el número <strong>997753496</strong></p>
+                                <p>No olvides confirmar el pago enviando la constancia a nuestro Whatsapp</p>
+                                <p><strong>9977753496</strong></p>
+                                <p>Titula:<strong> Karla Paola Sandoval Contreras</strong></p>
+                                <p>¡Muchas Gracias por su compra</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" name="payment-method" value="tarjeta" id="tarjeta">
+                                Tarjeta de Crédito/Débito
+                                <img src="imagenes/visa.png" alt="Visa" class="payment-icon">
+                                <img src="imagenes/mastercar.png" alt="MasterCard" class="payment-icon">
+                                <img src="imagenes/american.png" alt="American Express" class="payment-icon">
+                            </label>
+                            <div id="tarjeta-details" class="method-details">
+                                <p>Usted ingresará los datos de su tarjeta en el portal de pagos 100% SEGURO. Ingrese los detalles de su tarjeta:</p>
+                                <div class="form-group">
+                                    <label for="card-number">Número de Tarjeta</label>
+                                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-expiry">Fecha de Expiración</label>
+                                    <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/AA" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-cvc">CVC</label>
+                                    <input type="text" id="card-cvc" name="card-cvc" placeholder="123" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-holder">Nombre del Titular</label>
+                                    <input type="text" id="card-holder" name="card-holder" placeholder="Juan Pérez" required>
+                                </div>
+                                <p>Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros própositos descritos en nuestra política de privacidad.</p>
+                            </div>
+                        </div>
+                        <!-- Botón de Confirmar Compra -->
+                        <div class="confirm-container">
+                            <button type="submit" id="confirm-button">Confirmar Compra</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="tarjeta.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="nav-left">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="tienda.html">Tienda</a>
+            </nav>
+            <div class="logo-container">
+                <img src="imagenes/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="nav-right">
+                <a href="iniciar sesion.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="carrito.html" id="cart-icon" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="store">
+            <h1>Tienda</h1>
+            <div class="categories">
+                <button class="category-btn" data-category="bebidas">Jugos</button>
+                <button class="category-btn" data-category="snacks">Gomitas</button>
+                <button class="category-btn" data-category="postres">Mermelada</button>
+            </div>
+            <div class="products" id="products">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo-contact">
+                <img src="imagenes/logo.png" alt="Logo" class="footer-logo">
+                <div class="contact-info">
+                    <p>Teléfono: +123 456 7890</p>
+                    <p>Email: <a href="mailto:info@bebidafresa.com">info@bebidafresa.com</a></p>
+                    <p>Síguenos:</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564881196009&mibextid=qi2Omg&rdid=guccCnYIOMd3tkDh&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FWGmqkBfZDGgiv8Hw%2F%3Fmibextid%3Dqi2Omg" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-info">
+                <p>Aceptamos todas las tarjetas:</p>
+                <a href="https://www.visa.com" target="_blank" class="payment-icon" aria-label="Visa">
+                    <i class="fab fa-cc-visa"></i>
+                </a>
+                <a href="https://www.mastercard.com" target="_blank" class="payment-icon" aria-label="MasterCard">
+                    <i class="fab fa-cc-mastercard"></i>
+                </a>
+                <a href="https://www.americanexpress.com" target="_blank" class="payment-icon" aria-label="American Express">
+                    <i class="fab fa-cc-amex"></i>
+                </a>
+            </div>
+            <div class="complaint-book">
+                <img src="imagenes/libro de reclamaciones.png" alt="Libro de Reclamaciones">
+            </div>
+        </div>
+    </footer>
+
+    <script src="tienda.js"></script>
+</body>
+</html>

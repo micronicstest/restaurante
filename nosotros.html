@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="nav-left">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="tienda.html">Tienda</a>
+            </nav>
+            <div class="logo-container">
+                <img src="imagenes/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="nav-right">
+                <a href="iniciar sesion.html" class="icon-link" title="Iniciar Sesión"><i class="fas fa-user"></i></a>
+                <a href="carrito.html" id="cart-icon" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="mision" class="section-padding">
+            <div class="section-container">
+                <div class="section-image">
+                    <img src="imagenes/nosotros.png" alt="Misión">
+                </div>
+                <div class="section-text">
+                    <h2>Descripción de la Compañia</h2>
+                    <p>La empresa Vida Sana SAC se dedica a la elaboración de un producto diseñado específicamente para personas con diabetes, ofreciendo una opción nutritiva y deliciosa sin azúcar artificial ni azúcar agregado. Así mismo es elaborada con ingredientes de alta calidad y envasada en un formato ergonómico, esta bebida no solo promueve un estilo de vida saludable, sino que también es accesible en términos de costo. La empresa cuenta con una bebida para diabéticos sabor fresa o pera, ya que estas frutas son uno de los que ayuda a controlar la diabetes según Instituto Nacional de Diabetes y Enfermedades Digestivas y Renales (2021). Este producto se llama “FrutiVital”. Su enfoque en el bienestar del consumidor la posiciona como una alternativa atractiva en un mercado en crecimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="section-padding">
+            <div class="section-container">
+                <div class="section-image">
+                    <img src="imagenes/vision.png" alt="Visión">
+                </div>
+                <div class="section-text">
+                    <h2>Nuestra Visión</h2>
+                    <p>Ser la marca líder en el mercado de bebidas saludables para diabéticos en el Perú, reconocida por su calidad, innovación y compromiso con el bienestar de nuestros consumidores, contribuyendo a una vida más saludable y plena.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us" class="section-padding">
+            <div class="section-container">
+                <div class="section-image">
+                    <img src="imagenes/mision.png" alt="Sobre Nosotros">
+                </div>
+                <div class="section-text">
+                    <h2>Nuestra Misión</h2>
+                    <p>La misión de la empresa es ofrecer bebidas saludables y deliciosas, especialmente diseñadas para personas con diabetes, para ayudarles a controlar su condición y mejorar su calidad de vida.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section-padding">
+            <h2>Fundadores</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="imagenes/Karla.png" alt="Miembro del Equipo 1">
+                    <h3>Sandoval Contreras, Karla Paola</h3>
+                    <p>CEO y Fundadora</p>
+                </div>
+                <div class="team-member">
+                    <img src="imagenes/Josue.png" alt="Miembro del Equipo 2">
+                    <h3>Uceda Chiguala, Josue David</h3>
+                    <p>Director de Marketing</p>
+                </div>
+                <div class="team-member">
+                    <img src="imagenes/jean.png" alt="Miembro del Equipo 3">
+                    <h3>Amaya Guzmán, Jeancarlos</h3>
+                    <p>Jefe de Producción</p>
+                </div>
+                <div class="team-member">
+                    <img src="imagenes/saul.png" alt="Miembro del Equipo 4">
+                    <h3>Santos Julca, Saul</h3>
+                    <p>Responsable de Calidad</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <h2>Contáctanos</h2>
+            <div class="contact-container">
+                <p>Si tienes alguna pregunta, no dudes en contactarnos mediante el siguiente formulario:</p>
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comentario:</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Bebidas Saludables. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

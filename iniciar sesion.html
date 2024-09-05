@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión / Registrarse</title>
+    <link rel="stylesheet" href="css/iniciar seccion.css">
+    <script src="https://kit.fontawesome.com/e913df41ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+        </div>
+        <div class="logo-container">
+            <img src="imagenes/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="iconos">
+            <a href="iniciar sesion.html" class="icon-link"><i class="fas fa-user"></i></a>
+            <a href="carrito.html" id="cart-icon" class="icon-link">🛒</a>
+        </div>
+    </header>
+
+    <!-- Contenedor de Formulario -->
+    <div class="fondo">
+        <span class="icono-cerrar"><i class="fa-solid fa-x"></i></span>
+        <div class="contenedor-form login">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label for="#">Email</label>
+                </div>
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <label for="#">Contraseña</label>
+                </div>
+                <div class="recordar">
+                    <label for="#"><input type="checkbox">Recordar Sesion</label>
+                    <a href="#">¿Olvidé la contraseña?</a>
+                </div>
+                <button type="submit" class="btn">Iniciar Sesión</button>
+                <div class="registrar">
+                    <p>¿No tiene cuenta? <a href="#" class="registrar-link">Registrarse</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="contenedor-form registrar">
+            <h2>Registrarse</h2>
+            <form action="#">
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" required>
+                    <label for="#">Nombre de Usuario</label>
+                </div>
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label for="#">Email</label>
+                </div>
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <label for="#">Contraseña</label>
+                </div>
+                <div class="recordar">
+                    <label for="#"><input type="checkbox">Acepto los terminos y condiciones</label>
+                </div>
+                <button type="submit" class="btn">Registrarme</button>
+                <div class="registrar">
+                    <p>¿Tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="iniciar session.js"></script>
+</body>
+</html>

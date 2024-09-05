@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('/imagenes/jugo.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Estilos del Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; /* Fondo blanco para el encabezado */
+    z-index: 99;
+}
+
+/* Contenedor para la Navegación */
+.navegacion {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start; /* Alinear enlaces a la izquierda */
+}
+
+.navegacion a {
+    font-size: 1.5rem; /* Tamaño de fuente mayor */
+    font-weight: 550; /* Negrita */
+    color: #000; /* Color del texto negro */
+    text-decoration: none;
+    margin: 0 20px; /* Espaciado entre los enlaces */
+    transition: color 0.3s;
+}
+
+.navegacion a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s;
+}
+
+.navegacion a:hover {
+    color: #54BD42; /* Color rojo en hover */
+}
+
+.navegacion a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Contenedor para el Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.logo {
+    max-height: 100px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+/* Contenedor para los Iconos */
+.iconos {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end; /* Alinear a la derecha */
+}
+
+.icon-link {
+    font-size: 1.5rem;
+    color: #000; /* Color negro para los iconos */
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #54BD42; /* Color rojo en hover para los iconos */
+}
+
+/* Estilos del Fondo de Login */
+.fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente */
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: height .5s ease;
+}
+
+.fondo.active {
+    height: 455px;
+}
+
+.fondo .contenedor-form {
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+    transition: transform .17s ease;
+}
+
+.fondo .contenedor-form.login {
+    transform: translateX(0);
+}
+
+.fondo.active .contenedor-form.login {
+    transform: translateX(-400px);
+}
+
+.fondo .contenedor-form.registrar {
+    transform: translateX(400px);
+}
+
+.fondo.active .contenedor-form.registrar {
+    transform: translateX(0);
+}
+
+.fondo .icono-cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #090f1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1.8em;
+    color: #f1f0ef;
+}
+
+.contenedor-form h2 {
+    font-size: 2em;
+    color: #F1EFEF;
+    text-align: center;
+}
+
+.contenedor-input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #F1EFEF;
+    margin: 30px 0;
+}
+
+.contenedor-input label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 600;
+    pointer-events: none;
+    transition: .4s;
+    color: #f1f0ef;
+}
+
+.contenedor-input input:focus ~ label,
+.contenedor-input input:valid ~ label {
+    top: -5px;
+}
+
+.contenedor-input input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #f1f0ef;
+    padding: 0 35px 0 5px;
+}
+
+.contenedor-input .icono {
+    position: absolute;
+    right: 8px;
+    font-size: 1.4em;
+    color: #F1EFEF;
+    line-height: 57px;
+}
+
+.recordar {
+    font-size: .9em;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.recordar label input {
+    accent-color: #090f1d;
+    margin-right: 3px;
+}
+
+.recordar a {
+    color: #F1EFEF;
+    text-decoration: none;
+}
+
+.recordar a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #090f1d;
+    color: #F1EFEF;
+    margin-top: 10px;
+}
+
+.registrar {
+    font-size: .9em;
+    color: #F1EFEF;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.registrar p a {
+    color: #F1EFEF;
+    text-decoration: none;
+}
+
+.registrar p a:hover {
+    text-decoration: underline;
+}

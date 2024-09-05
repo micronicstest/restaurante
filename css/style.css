@@ -1,0 +1,413 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el tamaño total */
+}
+
+/* Estilos del Header */
+header {
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegura que el encabezado esté sobre otros elementos */
+}
+
+/* Contenedor del Encabezado */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Estilos de los enlaces en el encabezado */
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 25px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    color: #54BD42;
+}
+
+/* Contenedor y estilo del logo */
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-height: 100px;
+    width: auto;
+    margin-top: 5px;
+}
+
+/* Iconos de la navegación */
+.nav-right .icon-link {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-right .icon-link:hover {
+    color: #54BD42;
+}
+
+/* Ajuste del Contenido Principal para Evitar Superposición */
+main {
+    margin-top: 120px; /* Ajusta este valor según el tamaño del encabezado para asegurar visibilidad del contenido */
+}
+
+/* Slider */
+#hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+    margin-top: 130px;
+    z-index: 0;
+}
+
+.hero-container {
+    width: calc(100% * 3);
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+/* Controles del slider */
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.slider-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilos para el carrito de compras */
+#cart-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: none;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#cart-items img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+#cart-container h2 {
+    margin-top: 0;
+}
+
+button {
+    background: #54BD42;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #21411c;
+}
+
+/* Sección de Productos Más Vendidos */
+#best-sellers {
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0;
+    width: 300px;
+    border-radius: 50px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+}
+
+.product img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+}
+
+/* Sección Sobre Nosotros */
+#about-us {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre la imagen y la descripción */
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    width: 250px; /* Asegúrate de ajustar el tamaño según tus necesidades */
+    height: auto;
+    object-fit: cover;
+}
+
+.about-description {
+    max-width: 500px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #54BD42;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #21411c;
+}
+
+/* Estilos para la sección de productos destacados */
+#featured-products {
+    margin: 20px 0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-areas:
+        "top-left top-right"
+        "center center"
+        "bottom-left bottom-right";
+    gap: 50px; /* Ajusta el espacio entre los elementos */
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    padding: 50px; /* Asegura un espaciado alrededor del contenedor */
+}
+
+/* Estilos para los elementos de la cuadrícula */
+.featured-item {
+    opacity: 0;
+    transform: scale(0.9); /* Reduce el tamaño inicial para la animación de entrada */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    position: relative;
+    border-radius: 50px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+}
+
+/* Imágenes en las esquinas */
+.featured-item.top-left,
+.featured-item.top-right,
+.featured-item.bottom-left,
+.featured-item.bottom-right {
+    width: 470px; /* Ajusta el tamaño según sea necesario */
+    margin: 0; /* Asegura que no haya margen extra que pueda alterar la cuadrícula */
+}
+
+/* Imagen central */
+.featured-item.center {
+    grid-area: center;
+    width: 470px; /* Ajusta el tamaño según sea necesario */
+    z-index: 1; /* Coloca la imagen central encima de las otras */
+    transform: scale(1.1); /* Agranda la imagen central para que cubra parcialmente las imágenes circundantes */
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 34%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%) scale(1.1); /* Ajusta el centro y el tamaño */
+    margin: 0; /* Elimina margen extra */
+}
+
+/* Ajuste para las imágenes de arriba y abajo */
+.featured-item.top-left {
+    grid-area: top-left;
+    margin-bottom: -500px; /* Asegura una separación suficiente con la imagen central */
+}
+
+.featured-item.top-right {
+    grid-area: top-right;
+    margin-bottom: -500px; /* Asegura una separación suficiente con la imagen central */
+}
+
+.featured-item.bottom-left {
+    grid-area: bottom-left;
+    margin-top: 500px; /* Asegura una separación suficiente con la imagen central */
+}
+
+.featured-item.bottom-right {
+    grid-area: bottom-right;
+    margin-top: 500px; /* Asegura una separación suficiente con la imagen central */
+}
+
+.featured-item.appear {
+    opacity: 1;
+    transform: scale(1); /* Restaura el tamaño al original */
+}
+
+/* Sección Categorías */
+#categories {
+    padding: 20px;
+}
+
+/* Ajustar estilo de categorías en columnas */
+.category-grid {
+    display: flex;
+    flex-direction: column; /* Apilar categorías verticalmente */
+    gap: 40px; /* Espacio entre categorías */
+}
+
+.category-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+}
+
+.category-images {
+    display: flex;
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    gap: 20px; /* Espacio entre productos */
+}
+
+.category-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #f8f8f8;
+    border-top: 2px solid #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    max-height: 100px;
+    width: auto;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #54BD42;
+}
+
+.payment-info {
+    margin-top: 10px;
+}
+
+.payment-info a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.payment-info a:hover {
+    color: #54BD42;
+}
+
+.complaint-book img {
+    max-width: 150px;
+    height: auto;
+}
